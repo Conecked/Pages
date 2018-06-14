@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>New York Times Search</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+       crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+       crossorigin="anonymous">
+   <link rel="stylesheet" href="assets/css/style.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src='assets/javaScript/app.js'></script>
+</head>
+
+<body>
+
+   <div class="container">
+
+       <div class="jumbotron">
+           <h1 class="display-4">
+               <i class="fas fa-newspaper"></i> New York Times Search</h1>
+       </div>
+
+
+       <div class="card bg-light mb-3" style="max-width: 100%;">
+           <div class="card-header">
+               <i class="fas fa-newspaper"></i> Search Parameters</div>
+           <div class="card-body">
+               <form>
+                   <div class="form-group">
+                       <label for="formGroupExampleInput">Search Term:</label>
+                       <input type="text" class="form-control" id="searchTerm" placeholder="Example input">
+                   </div>
+
+                   <div class="form-group" class="form-control" id="numOfRecords">
+                    <label for="formGroupExampleInput">Number of Records to Retrieve:</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                    </select>
+                    </div>
+
+                   <div class="form-group">
+                       <label for="formGroupExampleInput2">Start Year (Optional):</label>
+                       <input type="text" class="form-control" id="start_date" placeholder="Another input">
+                   </div>
+                   <div class="form-group">
+                       <label for="formGroupExampleInput2">End Year (Optional):</label>
+                       <input type="text" class="form-control" id="end_date" placeholder="Another input">
+                   </div>
+               </form>
+               <button type="button" class="btn btn-dark" id='startSearch'>
+                   <i class="fas fa-search"></i> Search</button>
+               <button type="button" class="btn btn-dark" id='clearResults'>
+                   <i class="far fa-trash-alt"></i> Clear Results</button>
+
+           </div>
+
+           <div class="card bg-light mb-3" style="max-width: 100%;">
+            <div class="card-header">
+                <i class="fas fa-newspaper"></i> Top Articles</div>
+            <div class="card-body">
+
+            </div>
+
+            <div class="well" id="article-well-1">
+                <h3 class="articleHeadline">
+                    <span class="label label-primary">1</span>
+                    <strong>Title goes here</strong>
+                </h3>
+                <h5>Author goes here</h5>
+            </div>
+
+</body>
+
+</html>
